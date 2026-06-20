@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.pyc
+external/alpha-beta-CROWN/
+results/*.log
+results/*.txt
