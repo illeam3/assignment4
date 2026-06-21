@@ -1,0 +1,29 @@
+general:
+  device: cpu
+  complete_verifier: bab
+  enable_incomplete_verification: true
+  results_file: ../../../results/iris_out.txt
+
+model:
+  onnx_path: ../../../models/iris_mlp.onnx
+  input_shape: [1, 4]
+
+data:
+  start: 0
+  end: 1
+  num_outputs: 3
+
+specification:
+  type: vnnlib
+  vnnlib_path: ../../../specs/iris_sample_eps005.vnnlib
+
+solver:
+  batch_size: 64
+  bound_prop_method: alpha-crown
+  alpha-crown:
+    iteration: 20
+  beta-crown:
+    iteration: 10
+
+bab:
+  timeout: 60
