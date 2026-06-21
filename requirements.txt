@@ -1,13 +1,6 @@
+torch
 numpy
+scikit-learn
 onnx
 onnxruntime
-onnxoptimizer
-onnx2pytorch
-torch
-torchvision
 pyyaml
-scikit-learn
-skl2onnx
-appdirs
-tqdm
-graphviz
