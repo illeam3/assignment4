@@ -1,6 +1,23 @@
-.venv/
+# Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+.venv/
+.env/
+
+# Results / temporary logs
+*.log
+results/*.tmp
+
+# External verifier source
 external/alpha-beta-CROWN/
-results/*.log
-results/*.txt
+
+# Large model/checkpoint files if needed
+*.pt
+*.pth
+*.onnx
+
+# But allow our small assignment model files explicitly if needed
+!models/iris_mlp.pth
+!models/iris_mlp.onnx
